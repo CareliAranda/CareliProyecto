@@ -19,8 +19,8 @@
 
 
 
-<%= link_to 'Editar', edit_pin_path(@pin) %> |
-<%= link_to 'Volver', pins_path %>
+<%= link_to 'Editar', edit_pin_path(@pin),class="btn btn-default"%> |
+<%= link_to 'Volver', pins_path,class="btn btn-default" %>
 
 
-<%=	link_to "Mas pins del mismo usuario", pinsof_path(@pin.user.id) %>
+<%=	link_to "Mas pins del mismo usuario", pinsof_path(@pin.user.id) ,class="btn btn-default"%>
